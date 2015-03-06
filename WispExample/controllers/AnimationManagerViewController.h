@@ -11,6 +11,8 @@
 
 @interface AnimationManagerViewController : UIViewController<AnimateImageViewControllerDelegate>
 
+- (IBAction)simplePressed:(UIButton *)sender;
+- (IBAction)complexPressed:(UIButton *)sender;
 
 @end
 

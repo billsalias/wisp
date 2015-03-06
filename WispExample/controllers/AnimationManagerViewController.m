@@ -11,7 +11,11 @@
 
 @interface AnimationManagerViewController ()
 {
-    // Out two active image controllers that we are switching between
+    // Our single image view when executing the simple solution
+    UIImageView *animatedImage;
+    
+    // Our two active image controllers that we are switching between
+    // when executing the complex solution
     AnimateImageViewController *curImageView;
     AnimateImageViewController *nextImageView;
     
@@ -45,7 +49,78 @@
     // require a multi stage init, e.g. init, login, updateData, that would give
     // progress feedback through the UI. For now just init it.
     model = [AppModel new];
+}
+
+/**
+ * User requested the simple solution be run.
+ */
+- (IBAction)simplePressed:(UIButton *)sender {
+    [self startSimple];
+}
+
+/**
+ * User requested the complex solution be run.
+ */
+- (IBAction)complexPressed:(UIButton *)sender {
+    [self startComplex];
+}
+
+
+/**
+ * Kick off the second solution, the simplest one.
+ */
+- (void) startSimple {
+    // Allocate the image we will animate
+    animatedImage = [UIImageView new];
     
+    // Start zoomed in
+    animatedImage.contentMode = UIViewContentModeScaleAspectFill;
+    animatedImage.contentScaleFactor = 3;
+    animatedImage.frame = CGRectMake(-1000, -1000, 5000, 5000);
+    
+    // Give it an initial image
+    [animatedImage setImage:[self nextImage]];
+    
+    // Add it to our view hierarchy
+    [self.view addSubview:animatedImage];
+    
+    // Kick off the animation cycle
+    [self animateSimple:NO];
+}
+
+/**
+ * Alternate between zooming in and out and do a flip transition between images.
+ */
+- (void) animateSimple:(BOOL)zoomIn {
+   [UIView transitionWithView:animatedImage
+                     duration:5.0
+                      options:UIViewAnimationOptionTransitionNone | UIViewAnimationOptionCurveEaseInOut
+                   animations:  ^{
+                        if ( zoomIn ) {
+                            animatedImage.contentScaleFactor = 3;
+                            animatedImage.frame = CGRectMake(-1000, -1000, 5000, 5000);
+                        }
+                        else {
+                            animatedImage.contentScaleFactor = 1;
+                            animatedImage.frame = self.view.bounds;
+                        }
+                   } completion:^(BOOL finished) {
+                       dispatch_async(dispatch_get_main_queue(), ^{
+                           [UIView transitionWithView:animatedImage duration:1.0 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+                               [animatedImage setImage:[self nextImage]];
+                           } completion:^(BOOL finished) {
+                               dispatch_async(dispatch_get_main_queue(), ^{
+                                   [self animateSimple:!zoomIn];
+                               });
+                           }];
+                       });
+                   }];
+}
+
+/**
+ * Kick off the complex solution.
+ */
+- (void) startComplex {
     // Load two instances of image view controllers here.
     // NOTE: Given the simplicity of this app I could have done this
     // programatically but I thought it was more illustrative to do
