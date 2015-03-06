@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2E81F2E1AA9381D005785CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E81F2D1AA9381D005785CD /* main.m */; };
+		E2E81F311AA9381D005785CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E81F301AA9381D005785CD /* AppDelegate.m */; };
+		E2E81F371AA9381D005785CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E81F351AA9381D005785CD /* Main.storyboard */; };
+		E2E81F391AA9381D005785CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E81F381AA9381D005785CD /* Images.xcassets */; };
+		E2E81F3C1AA9381D005785CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E81F3A1AA9381D005785CD /* LaunchScreen.xib */; };
+		E2E81F481AA9381D005785CD /* WispExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E81F471AA9381D005785CD /* WispExampleTests.m */; };
+		E2E81F5F1AA94A94005785CD /* AnimateImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E81F5C1AA94A94005785CD /* AnimateImageViewController.m */; };
+		E2E81F601AA94A94005785CD /* AnimationManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E81F5E1AA94A94005785CD /* AnimationManagerViewController.m */; };
+		E2E81F631AA94AAB005785CD /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E81F621AA94AAB005785CD /* AppModel.m */; };
+		E2E81F651AA94D3F005785CD /* images in Resources */ = {isa = PBXBuildFile; fileRef = E2E81F641AA94D3E005785CD /* images */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2E81F421AA9381D005785CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E81F201AA9381C005785CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E81F271AA9381C005785CD;
+			remoteInfo = WispExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2E81F281AA9381C005785CD /* WispExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WispExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E81F2C1AA9381D005785CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E81F2D1AA9381D005785CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2E81F2F1AA9381D005785CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2E81F301AA9381D005785CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2E81F361AA9381D005785CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2E81F381AA9381D005785CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2E81F3B1AA9381D005785CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E2E81F411AA9381D005785CD /* WispExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WispExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E81F461AA9381D005785CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E81F471AA9381D005785CD /* WispExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WispExampleTests.m; sourceTree = "<group>"; };
+		E2E81F5B1AA94A94005785CD /* AnimateImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimateImageViewController.h; path = controllers/AnimateImageViewController.h; sourceTree = "<group>"; };
+		E2E81F5C1AA94A94005785CD /* AnimateImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimateImageViewController.m; path = controllers/AnimateImageViewController.m; sourceTree = "<group>"; };
+		E2E81F5D1AA94A94005785CD /* AnimationManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationManagerViewController.h; path = controllers/AnimationManagerViewController.h; sourceTree = "<group>"; };
+		E2E81F5E1AA94A94005785CD /* AnimationManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationManagerViewController.m; path = controllers/AnimationManagerViewController.m; sourceTree = "<group>"; };
+		E2E81F611AA94AAB005785CD /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppModel.h; path = model/AppModel.h; sourceTree = "<group>"; };
+		E2E81F621AA94AAB005785CD /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppModel.m; path = model/AppModel.m; sourceTree = "<group>"; };
+		E2E81F641AA94D3E005785CD /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2E81F251AA9381C005785CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E81F3E1AA9381D005785CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2E81F1F1AA9381C005785CD = {
+			isa = PBXGroup;
+			children = (
+				E2E81F2A1AA9381C005785CD /* WispExample */,
+				E2E81F441AA9381D005785CD /* WispExampleTests */,
+				E2E81F291AA9381C005785CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2E81F291AA9381C005785CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F281AA9381C005785CD /* WispExample.app */,
+				E2E81F411AA9381D005785CD /* WispExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2E81F2A1AA9381C005785CD /* WispExample */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F641AA94D3E005785CD /* images */,
+				E2E81F5A1AA94484005785CD /* Controllers */,
+				E2E81F591AA94470005785CD /* Model */,
+				E2E81F2F1AA9381D005785CD /* AppDelegate.h */,
+				E2E81F301AA9381D005785CD /* AppDelegate.m */,
+				E2E81F351AA9381D005785CD /* Main.storyboard */,
+				E2E81F381AA9381D005785CD /* Images.xcassets */,
+				E2E81F3A1AA9381D005785CD /* LaunchScreen.xib */,
+				E2E81F2B1AA9381C005785CD /* Supporting Files */,
+			);
+			path = WispExample;
+			sourceTree = "<group>";
+		};
+		E2E81F2B1AA9381C005785CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F2C1AA9381D005785CD /* Info.plist */,
+				E2E81F2D1AA9381D005785CD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2E81F441AA9381D005785CD /* WispExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F471AA9381D005785CD /* WispExampleTests.m */,
+				E2E81F451AA9381D005785CD /* Supporting Files */,
+			);
+			path = WispExampleTests;
+			sourceTree = "<group>";
+		};
+		E2E81F451AA9381D005785CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F461AA9381D005785CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2E81F591AA94470005785CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F611AA94AAB005785CD /* AppModel.h */,
+				E2E81F621AA94AAB005785CD /* AppModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E2E81F5A1AA94484005785CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2E81F5B1AA94A94005785CD /* AnimateImageViewController.h */,
+				E2E81F5C1AA94A94005785CD /* AnimateImageViewController.m */,
+				E2E81F5D1AA94A94005785CD /* AnimationManagerViewController.h */,
+				E2E81F5E1AA94A94005785CD /* AnimationManagerViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2E81F271AA9381C005785CD /* WispExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E81F4B1AA9381D005785CD /* Build configuration list for PBXNativeTarget "WispExample" */;
+			buildPhases = (
+				E2E81F241AA9381C005785CD /* Sources */,
+				E2E81F251AA9381C005785CD /* Frameworks */,
+				E2E81F261AA9381C005785CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WispExample;
+			productName = WispExample;
+			productReference = E2E81F281AA9381C005785CD /* WispExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2E81F401AA9381D005785CD /* WispExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E81F4E1AA9381D005785CD /* Build configuration list for PBXNativeTarget "WispExampleTests" */;
+			buildPhases = (
+				E2E81F3D1AA9381D005785CD /* Sources */,
+				E2E81F3E1AA9381D005785CD /* Frameworks */,
+				E2E81F3F1AA9381D005785CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E81F431AA9381D005785CD /* PBXTargetDependency */,
+			);
+			name = WispExampleTests;
+			productName = WispExampleTests;
+			productReference = E2E81F411AA9381D005785CD /* WispExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2E81F201AA9381C005785CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Bill Clogston";
+				TargetAttributes = {
+					E2E81F271AA9381C005785CD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E2E81F401AA9381D005785CD = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E2E81F271AA9381C005785CD;
+					};
+				};
+			};
+			buildConfigurationList = E2E81F231AA9381C005785CD /* Build configuration list for PBXProject "WispExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2E81F1F1AA9381C005785CD;
+			productRefGroup = E2E81F291AA9381C005785CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2E81F271AA9381C005785CD /* WispExample */,
+				E2E81F401AA9381D005785CD /* WispExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E81F261AA9381C005785CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E81F651AA94D3F005785CD /* images in Resources */,
+				E2E81F371AA9381D005785CD /* Main.storyboard in Resources */,
+				E2E81F3C1AA9381D005785CD /* LaunchScreen.xib in Resources */,
+				E2E81F391AA9381D005785CD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E81F3F1AA9381D005785CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2E81F241AA9381C005785CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E81F311AA9381D005785CD /* AppDelegate.m in Sources */,
+				E2E81F2E1AA9381D005785CD /* main.m in Sources */,
+				E2E81F631AA94AAB005785CD /* AppModel.m in Sources */,
+				E2E81F601AA94A94005785CD /* AnimationManagerViewController.m in Sources */,
+				E2E81F5F1AA94A94005785CD /* AnimateImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E81F3D1AA9381D005785CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E81F481AA9381D005785CD /* WispExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2E81F431AA9381D005785CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E81F271AA9381C005785CD /* WispExample */;
+			targetProxy = E2E81F421AA9381D005785CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2E81F351AA9381D005785CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E81F361AA9381D005785CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2E81F3A1AA9381D005785CD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E81F3B1AA9381D005785CD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2E81F491AA9381D005785CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2E81F4A1AA9381D005785CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2E81F4C1AA9381D005785CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WispExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2E81F4D1AA9381D005785CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WispExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2E81F4F1AA9381D005785CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WispExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WispExample.app/WispExample";
+			};
+			name = Debug;
+		};
+		E2E81F501AA9381D005785CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WispExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WispExample.app/WispExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2E81F231AA9381C005785CD /* Build configuration list for PBXProject "WispExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E81F491AA9381D005785CD /* Debug */,
+				E2E81F4A1AA9381D005785CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E81F4B1AA9381D005785CD /* Build configuration list for PBXNativeTarget "WispExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E81F4C1AA9381D005785CD /* Debug */,
+				E2E81F4D1AA9381D005785CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2E81F4E1AA9381D005785CD /* Build configuration list for PBXNativeTarget "WispExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E81F4F1AA9381D005785CD /* Debug */,
+				E2E81F501AA9381D005785CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2E81F201AA9381C005785CD /* Project object */;
+}

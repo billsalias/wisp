@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation Manager View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnimationManagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Animate Image View Controller-->
+        <scene sceneID="nRt-DJ-jGK">
+            <objects>
+                <viewController storyboardIdentifier="ImageControllerOne" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fR2-2v-SIc" customClass="AnimateImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oxP-YM-RaY"/>
+                        <viewControllerLayoutGuide type="bottom" id="E5r-7g-nuH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iad-EQ-8S3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIl-1A-aDq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNu-Yr-vjQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="A5m-KF-J8u"/>
+                                            <constraint firstAttribute="width" constant="1000" id="Mtn-wW-DPt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hNu-Yr-vjQ" firstAttribute="top" secondItem="oIl-1A-aDq" secondAttribute="top" id="6E0-eD-nTu"/>
+                                    <constraint firstItem="hNu-Yr-vjQ" firstAttribute="leading" secondItem="oIl-1A-aDq" secondAttribute="leading" id="r0S-Tz-Vhq"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNu-Yr-vjQ" secondAttribute="bottom" id="tIi-I4-gaV"/>
+                                    <constraint firstAttribute="trailing" secondItem="hNu-Yr-vjQ" secondAttribute="trailing" id="vve-Gf-Usf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E5r-7g-nuH" firstAttribute="top" secondItem="oIl-1A-aDq" secondAttribute="bottom" id="Goy-LR-PU7"/>
+                            <constraint firstAttribute="trailing" secondItem="oIl-1A-aDq" secondAttribute="trailing" id="NHy-Gm-G4j"/>
+                            <constraint firstItem="oIl-1A-aDq" firstAttribute="leading" secondItem="Iad-EQ-8S3" secondAttribute="leading" id="dhF-qZ-l2r"/>
+                            <constraint firstItem="oIl-1A-aDq" firstAttribute="top" secondItem="Iad-EQ-8S3" secondAttribute="topMargin" id="n3v-z3-4zL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageHeightCon" destination="A5m-KF-J8u" id="WEv-hf-nim"/>
+                        <outlet property="imageScrollView" destination="oIl-1A-aDq" id="fHs-wn-QBm"/>
+                        <outlet property="imageView" destination="hNu-Yr-vjQ" id="GRB-b9-lRP"/>
+                        <outlet property="imageWidthCon" destination="Mtn-wW-DPt" id="Bxm-dV-JjJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfF-Dt-oxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="202"/>
+        </scene>
+        <!--Animate Image View Controller-->
+        <scene sceneID="29V-Pc-GfA">
+            <objects>
+                <viewController storyboardIdentifier="ImageControllerTwo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z1N-73-Ihf" customClass="AnimateImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="63m-8o-KlB"/>
+                        <viewControllerLayoutGuide type="bottom" id="HYj-7w-36Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="za6-pu-hqr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-6x-xoj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-WA-Okb">
+                                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1000" id="iaO-CA-61p"/>
+                                            <constraint firstAttribute="height" constant="1000" id="tpL-oI-oaT"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0bA-WA-Okb" firstAttribute="leading" secondItem="i4M-6x-xoj" secondAttribute="leading" id="A3O-Qt-dQL"/>
+                                    <constraint firstItem="0bA-WA-Okb" firstAttribute="top" secondItem="i4M-6x-xoj" secondAttribute="top" id="JqX-va-hIh"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bA-WA-Okb" secondAttribute="trailing" id="Q5e-1L-Aop"/>
+                                    <constraint firstAttribute="bottom" secondItem="0bA-WA-Okb" secondAttribute="bottom" id="kLa-bB-mny"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i4M-6x-xoj" firstAttribute="top" secondItem="za6-pu-hqr" secondAttribute="top" id="DWa-cc-m6l"/>
+                            <constraint firstItem="i4M-6x-xoj" firstAttribute="leading" secondItem="za6-pu-hqr" secondAttribute="leading" id="LNL-Dn-IZJ"/>
+                            <constraint firstItem="HYj-7w-36Z" firstAttribute="top" secondItem="i4M-6x-xoj" secondAttribute="bottom" id="LTu-8a-CNI"/>
+                            <constraint firstAttribute="trailing" secondItem="i4M-6x-xoj" secondAttribute="trailing" id="jmy-Mh-G9L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageHeightCon" destination="tpL-oI-oaT" id="cVb-cT-kak"/>
+                        <outlet property="imageScrollView" destination="i4M-6x-xoj" id="kaQ-c9-Oh3"/>
+                        <outlet property="imageView" destination="0bA-WA-Okb" id="VT2-SX-SUB"/>
+                        <outlet property="imageWidthCon" destination="iaO-CA-61p" id="D0D-Li-vEn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewr-I0-Wag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="929"/>
+        </scene>
+    </scenes>
+</document>
